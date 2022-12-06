@@ -4,18 +4,6 @@ import store from './src/store';
 import AppInner from './AppInner';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
-export type LoggedInParamList = {
-  Orders: undefined;
-  Settings: undefined;
-  Delivery: undefined;
-  Complete: {orderId: string};
-};
-
-export type RootStackParamList = {
-  SignIn: undefined;
-  SignUp: undefined;
-};
-
 function App() {
   return (
     <Provider store={store}>
